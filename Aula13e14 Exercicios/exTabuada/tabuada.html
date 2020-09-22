@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" type="text/css" href="tabuada.css">
+</head>
+
+<body>
+    <header id=cabeçalho>
+        <h1>Tabuada Online</h1>
+    </header>
+
+    <section id="princ">
+        <p id="textTab">Digite abaixo o numero do qual você deseja obter a tabuada:</p>
+        <div id="div1">
+            <p>
+                Número: <input type="number" name="txtNum" id="txtNum" />
+                X <input type="number" id="mulMin"> até <input type="number" id="mulMax">
+                <button onclick="tabuada()" id="botao">obter tabuada</button>
+            </p>
+
+        </div>
+
+
+        <div class="div2">
+            <textarea name="resTab" id="resTab" cols="30" rows="10"></textarea>
+
+            <aside id="msg">
+                <p>OI</p>
+
+            </aside>
+        </div>
+
+
+    </section>
+
+
+
+    <footer id="rodape">
+        &copy;Curso em Video
+
+    </footer>
+    <script src="tabuada.js">
+
+    </script>
+</body>
+
+</html>

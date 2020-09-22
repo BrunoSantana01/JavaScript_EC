@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+
+body{
+    background-color: rgb(255, 100, 61);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+    body footer,h1{
+        color: white;
+        text-shadow: 2px 1px black;
+    }
+
+section#partep{
+    width: 500px;
+    height: auto;
+    background-color: cornsilk;
+    border-radius: 20px;
+    padding : 10px 30px 30px 30px;
+    display: block;
+    margin:auto;
+    text-align: left;
+}
+
+div#res{
+    margin : 10px;
+
+}

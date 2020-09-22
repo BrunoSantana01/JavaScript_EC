@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Loop FOR - Devmedia</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script>
+    // inicializa as variáveis
+    var dados = new Array();
+    var media = 0, mediaGeral =0;
+     
+    // cria o nosso array de dados de alunos
+    dados[0] = [ "aluno 1", 7, 8, 7, 8 ];
+    dados[1] = [ "aluno 2", 9, 9, 7, 7 ];
+    dados[2] = [ "aluno 3", 8, 8, 9, 10 ];
+    dados[3] = [ "aluno 4", 9, 9, 10, 6 ];
+     
+    /* criamos o loop for para iteração com o array
+ de dados dos alunos*/
+    /* perceba que nossa condição de parada é enquanto
+a variável i for menor que o tamanho do array de dados*/
+    /* a cada iteração, teremos a nossa variável local
+ "i" acrescida de 1 digito, ou seja i++ é igual a i = i + 1*/
+     
+    for(var i = 0; i < dados.length; i++){
+        // calcula a média do aluno
+        var mediaAluno = (dados[i][1]+dados[i][2]+dados[i][3]) / (dados[i].length -1);
+        // armazena a média do aluno para futuro calculo da média geral
+        media += mediaAluno;
+        // escreve a média do aluno
+        document.write(dados[i][0]+ " / Média: "+ mediaAluno.toFixed(2) + "<br/>");
+    }
+     
+    // calcula a média geral da turma
+    mediaGeral = media/dados.length;
+    // escreve a média da turma
+    document.write("Média Geral: "+mediaGeral.toFixed(2));
+     
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade e Residência</title>
+</head>
+<body>
+
+    <h1>Sistema de Verificação de Residencia</h1>
+
+    Digite sua Nacionalidade <input type="text" id="txtNac" name="txtNac"><br>
+    Digite seu pais de Residencia <input type="text" id="txtRes" name="txtRes"><br>
+
+    <input type="button" value="verificar" onclick="verificacao()"/>
+    
+    <div id='ver'></div>
+
+    <script>
+        function verificacao()
+        {
+            var nac = document.getElementById('txtNac')
+            var res = document.getSelection('input#txtRes')
+            var ver = document.getSelection('div#ver')
+            var pais = (txtpa.value)
+            var  = (txtpa.value)
+            if(nac == res){
+                ver.innerTxt= ('Você não é estrangeiro.')
+            
+            }else{
+                ver.innerTxt =  ('Você é estrangeiro.')
+        }
+    }
+    </script>
+    
+
+
+</body>
+</html>
